@@ -1,0 +1,29 @@
+{
+  "name": "nodejs-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/debasish283/nodejs-practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/debasish283/nodejs-practice/issues"
+  },
+  "homepage": "https://github.com/debasish283/nodejs-practice#readme",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "config": "^1.20.4",
+    "express": "^4.13.4",
+    "jade": "^1.11.0",
+    "mysql": "~2.10.2",
+    "path": "^0.12.7",
+    "pug": "^2.0.0-alpha7",
+    "request": "^2.72.0"
+  }
+}

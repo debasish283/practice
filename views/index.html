@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Page</title>
+	<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+	<link href="/css/styles.css" rel="stylesheet">
+	<center><h1>Registration Page</h1></center>
+</head>
+	<body>
+	<center>
+	<form class="form-horizontal" action = "/register" method = "post">
+		<fieldset>
+
+		<div class="form-group">
+		  <label class="col-md-4 control-label" for="firstname">First Name</label>  
+		  <div class="col-md-4">
+		  <input id="firstname" name="firstname" type="text" placeholder="firstname" class="form-control input-md" required="">
+		    
+		  </div>
+		</div>
+
+		<div class="form-group">
+		  <label class="col-md-4 control-label" for="lastname">Last Name</label>  
+		  <div class="col-md-4">
+		  <input id="lastname" name="lastname" type="text" placeholder="lastname" class="form-control input-md">
+		    
+		  </div>
+		</div>
+
+		<div class="form-group">
+		  <label class="col-md-4 control-label" for="username">Username</label>  
+		  <div class="col-md-4">
+		  <input id="username" name="username" type="text" placeholder="username" class="form-control input-md">
+		    
+		</div>
+		</div>
+		<div class="form-group">
+		  <label class="col-md-4 control-label" for="age">Date of Birth</label>  
+		  <div class="col-md-4">
+		  	<input id="bday" name="bday" type="date" class="form-control input-md">
+		  </div>
+		</div>
+
+		<div class="form-group">
+		  <label class="col-md-4 control-label" for="gender">Gender</label>
+		  <div class="col-md-1">
+		  <div class="radio">
+		    <label for="gender">
+		      <input type="radio" name="gender" id="Male" value = "Male">
+		      Male
+		    </label>
+		  </div>
+		  <div class="radio">
+		    <label for="gender">
+		      <input type="radio" name="gender" id="Female" value = "Female">
+		      Female
+		    </label>
+		   </div>
+		  </div>
+		</div>
+	<!-- 	<div class="form-group">
+  			<label class="col-md-4 control-label" for="gender">Gender</label>
+  			<div class="col-md-2">
+    			<select id="gender" name="gender" class="form-control" multiple="multiple">
+      				<option value="Male">Male</option>
+      				<option value="Female">Female</option>
+    			</select>
+  			</div>
+		</div> -->
+
+		<!-- Password input-->
+		<div class="form-group">
+		  <label class="col-md-4 control-label" for="pwd">Password</label>
+		  <div class="col-md-4">
+		    <input id="pwd" name="pwd" type="password" placeholder="password" class="form-control input-md">
+		    
+		  </div>
+		</div>
+
+		<!-- Password input-->
+		<div class="form-group">
+		  <label class="col-md-4 control-label" for="cnfpwd">Confirm Password</label>
+		  <div class="col-md-4">
+		    <input id="cnfpwd" name="cnfpwd" type="password" placeholder="confirm password" class="form-control input-md">
+		    
+		  </div>
+		</div>
+
+		<!-- Button (Double) -->
+		<div class="form-group">
+		  <label class="col-md-4 control-label" for="button1id"></label>
+		  <div></div>
+		  <div class="col-md-2">
+		    <button id="submit" name="submit" class="btn btn-primary">Submit</button>
+		    <button id="reset" name="reset" class="btn btn-danger">&nbspReset&nbsp</button>
+		  </div>
+		</div>
+
+	</fieldset>
+	</form>
+
+	</center>
+</body>
+</html>

@@ -11,8 +11,6 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json());
 
-//dbConnection.dbConnection();
-
 app.set('view engine', 'jade');
 
 app.set('views', __dirname + '/views');
@@ -24,6 +22,7 @@ app.get('/', function(req, res){
 });
 
 app.post('/register', routes);
+
 
 app.listen(3000, function(){
 	console.log('port 3000 is on!')

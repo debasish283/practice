@@ -5,9 +5,10 @@ const dbConnection = require('../dbConnection');
 
 router.post('/', function(req, res){
 
-	dbConnection.dbConnection(req.body);
+	dbConnection.dbConnection.register(req.body);
 	// console.log(req.body);
 	console.log('Hi I am here');
+	res.send('U r registered');
 	// console.log(req.body.fname);
 	// console.log(req.body.lname);
 	// console.log(req.body.uname);

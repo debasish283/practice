@@ -18,11 +18,14 @@ app.set('views', __dirname + '/views');
 app.use(express.static( __dirname + '/public'));
 
 app.get('/', function(req, res){
-	res.render( __dirname + '/views/index.jade');
+	res.render( __dirname + '/views/login.jade');
+});
+
+app.get('/register', function(req, res){
+	res.render( __dirname + '/views/registration.jade');
 });
 
 app.post('/register', routes);
-
 
 app.listen(3000, function(){
 	console.log('port 3000 is on!')

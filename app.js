@@ -1,7 +1,7 @@
 
 var express = require('express');
 var app = express();
-var dbConnection = require('./dbConnection');
+//var dbConnection = require('./dbConnection');
 var routes = require('./routes');
 var bodyParser = require('body-parser');
 
@@ -20,6 +20,8 @@ app.use(express.static( __dirname + '/public'));
 app.get('/', function(req, res){
 	res.render( __dirname + '/views/login.jade');
 });
+
+app.post('/login', routes);
 
 app.get('/register', function(req, res){
 	res.render( __dirname + '/views/registration.jade');
